@@ -30,17 +30,18 @@ Running
 -------
 From a command line in the folder of the repository:
 First you have to compile main.cpp  
-`$ g++ -std=c++11 -ggdb `pkg-config --cflags opencv` -o `basename main.cpp .cpp` main.cpp `pkg-config --libs opencv`
+	g++ -std=c++11 -ggdb `pkg-config --cflags opencv` -o `basename main.cpp .cpp` main.cpp `pkg-config --libs opencv`
 
 Then you can run main
 
-`$ ./main
+	./main
 
 You can selected option of menu.
 
-***** MENU *****
-1. Cambiar camara
-2. Agregar nuevo rostro
-3. Entrenar
-4. Iniciar reconocimiento
-5. Salir
+MENU
+-------------
+	1. Cambiar camara: Select the camera to use.
+	2. Agregar nuevo rostro: Add new face.
+	3. Entrenar: Train app
+	4. Iniciar reconocimiento
+	5. Salir: Start the recognition process
