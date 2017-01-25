@@ -229,9 +229,9 @@ void aplicarReconocimiento(int camara){
 
 				porcentaje = 100 - ((int) ((confidence / 1200) * 100));
 
-				string nombrePersona = "Desc: -" + listaNombres[label] + " - Prob: " + std::to_string(porcentaje) + "% | " + std::to_string(confidence);
+				string nombrePersona = "Desconocido";
 
-				if (porcentaje > 70)
+				if (porcentaje > 30)
 				{
 					nombrePersona = listaNombres[label];
 				}
